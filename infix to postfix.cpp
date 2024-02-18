@@ -101,4 +101,5 @@ int main() {
 
     infixToPostfix(infix, postfix);
 
-    printf("Postfix expression: %s
+    printf("Postfix expression: %s");
+}
