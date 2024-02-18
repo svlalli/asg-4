@@ -4,8 +4,10 @@
 int stack[MAX_SIZE];
 int top = -1;
 
-void push(int item) {
-    if (top == MAX_SIZE - 1) {
+void push(int item)
+{
+    if (top == MAX_SIZE - 1)
+    {
         printf("Stack Overflow! Cannot push item.\n");
         return;
     }
@@ -14,7 +16,8 @@ void push(int item) {
 }
 
 int pop() {
-    if (top == -1) {
+    if (top == -1) 
+    {
         printf("Stack Underflow! Cannot pop item.\n");
         return -1;
     }
@@ -23,23 +26,28 @@ int pop() {
     return item;
 }
 
-int peek() {
-    if (top == -1) {
+int peek()
+{
+    if (top == -1)
+    {
         printf("Stack is empty!\n");
         return -1;
     }
     return stack[top];
 }
 
-int isEmpty() {
+int isEmpty()
+{
     return (top == -1);
 }
 
-int isFull() {
+int isFull()
+{
     return (top == MAX_SIZE - 1);
 }
 
-int main() {
+int main()
+{
     push(10);
     push(20);
     push(30);
@@ -50,9 +58,11 @@ int main() {
     pop();
     pop();
     
-    if (isEmpty()) {
+    if (isEmpty())
+    {
         printf("Stack is empty.\n");
-    } else {
+    } else 
+    {
         printf("Stack is not empty.\n");
     }
     
